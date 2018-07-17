@@ -12,7 +12,7 @@ public class Testhibernet1 {
 		Configuration configuration = new Configuration().configure("hibernet.cfg.xml");
 		SessionFactory sessionFactory = configuration.buildSessionFactory();
 		Session session = sessionFactory.openSession();
-
+		System.out.println("Session opened");
 		Testhibernet test = new Testhibernet();
 		test.setId(10);
 		test.setName("Suresh");
